@@ -6,14 +6,16 @@
 </head>
 <body>
     <h1>Base</h1>
-        <div th:each="msg : ${msgList}">
+        <div>
             <table>
+                <thead>
                 <tr>
-                    <th>Référence</th>
-                    <th>Prénom</th>
-                    <th>Desc</th>
+                    <th style="width: 150px;">Réference</th>
+                    <th style="width: 200px;">Prénom</th>
+                    <th style="width: 120px">desc</th>
                 </tr>
-                <tr>
+                </thead>
+                <tr th:each="msg : ${msgList}">
                     <td th:text="${msg.ref}">Référence</td>
                     <td th:text="${msg.name}">Prénom</td>
                     <td th:text="${msg.desc}">Desc</td>
