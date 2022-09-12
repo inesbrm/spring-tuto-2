@@ -19,8 +19,7 @@ public class BaseLegaleController {
 
     @GetMapping("/base")
     public List<BaseLegale> listALl(){
-        String sql ="SELECT * FROM baseLegale";
-        return baseLegale.findAll();
+        base = baseLegale.findAll();
     }
 
 
