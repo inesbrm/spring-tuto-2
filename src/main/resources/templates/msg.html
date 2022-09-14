@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link href="webjars/bootstrap/3.3.6/css/bootstrap.min.css"
+          rel="stylesheet">
 </head>
 <body>
     <h1>Base</h1>
@@ -15,7 +17,7 @@
                     <th style="width: 120px">desc</th>
                 </tr>
                 </thead>
-                <tr th:each="msg : ${msgList}">
+                <tr th:each="msg : ${listAll}">
                     <td th:text="${msg.ref}">Référence</td>
                     <td th:text="${msg.name}">Prénom</td>
                     <td th:text="${msg.desc}">Desc</td>

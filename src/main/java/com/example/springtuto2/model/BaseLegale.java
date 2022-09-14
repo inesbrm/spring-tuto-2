@@ -22,8 +22,6 @@ public class BaseLegale{
     public BaseLegale() {
 
     }
-
-
     public String getRef() {
         return Ref;
     }

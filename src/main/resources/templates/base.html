@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://thymleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Base Légale</title>
+</head>
+<body>
+<h1>Base</h1>
+<div>
+  <table>
+    <thead>
+    <tr>
+      <th style="width: 150px;">Réference</th>
+      <th style="width: 200px;">Prénom</th>
+      <th style="width: 120px">desc</th>
+    </tr>
+    </thead>
+    <tr th:each="base: ${msgList}">
+      <td th:text="${base.ref}">Référence</td>
+      <td th:text="${base.name}">Prénom</td>
+      <td th:text="${base.desc}">Desc</td>
+    </tr>
+  </table>
+</div>
+</body>
+</html>
